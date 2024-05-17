@@ -37,4 +37,4 @@ print(dataset['category'].value_counts())
 #FIRST
 cross_table_ages = pd.crosstab(dataset['Age'], dataset['category']).reindex(['child', 'young', 'adult', 'old'], axis=1)
 print(cross_table_ages)
-print(dataset.hist())
+print(dataset.hist()) 
