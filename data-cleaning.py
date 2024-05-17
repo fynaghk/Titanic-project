@@ -18,6 +18,7 @@ print(dataset.duplicated().sum())
 print(dataset.isnull().sum())
 
 # remove rows which have missing values
+dataset.drop('Ticket', axis=1, inplace=True)
 dataset.drop('Cabin', axis=1, inplace=True)
 dataset.dropna(inplace=True)
 
